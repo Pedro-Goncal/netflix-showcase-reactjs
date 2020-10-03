@@ -1,0 +1,169 @@
+.loginlogin {
+  background-image: url("https://assets.nflxext.com/ffe/siteui/vlv3/0f67308d-db59-4393-9502-8e475c69a0b5/689f43b3-97b8-488e-ab07-d851fe507747/MX-en-20200928-popsignuptwoweeks-perspective_alpha_website_large.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  box-shadow: inset 0 0 0 2000px rgba(0, 0, 0, 0.484);
+}
+
+.login__banner {
+  height: 80px;
+}
+
+.nav__logo__login {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  height: 40px;
+  padding-left: 56px;
+  object-fit: contain;
+}
+
+.login {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.login__backgroundImg {
+  position: absolute;
+  z-index: -1;
+  width: 100%;
+  height: auto;
+  top: 0;
+}
+
+.login__container {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.831);
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+  box-sizing: border-box;
+  font-size: 16px;
+  min-width: 380px;
+  padding-bottom: 90px;
+  padding-left: 68px;
+  padding-right: 68px;
+  padding-top: 60px;
+  width: 450px;
+  min-height: 660px;
+  -moz-box-direction: normal;
+  -moz-box-orient: vertical;
+  display: flex;
+  flex-direction: column;
+  border-radius: 2px;
+}
+
+.login__container h1 {
+  font-size: 32px;
+  padding-bottom: 25px;
+}
+
+.login__container input {
+  background-color: rgb(51, 51, 51);
+  width: 100%;
+  margin-bottom: 10px;
+  padding: 20px;
+  height: 20px;
+  border-radius: 3px;
+  outline: none;
+  border: none;
+  box-sizing: border-box;
+  font-size: 14px;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: rgb(146, 146, 146);
+}
+
+input:-webkit-autofill {
+  -webkit-box-shadow: 0 0 0 30x rgb(51, 51, 51) inset !important;
+}
+
+input:-webkit-autofill {
+  -webkit-text-fill-color: rgb(146, 146, 146) !important;
+}
+
+.login__checkbox {
+  display: flex;
+  justify-content: space-between;
+  align-items: space-between;
+}
+
+.login__checkbox input {
+  width: 15px;
+  background-color: rgb(51, 51, 51);
+  outline: none;
+  border: none;
+}
+.login__checkbox label {
+  color: rgb(146, 146, 146);
+  font-size: 13px;
+  padding-left: 5px;
+}
+
+.login__checkbox p {
+  color: rgb(146, 146, 146);
+  font-size: 13px;
+}
+
+.login__signinButton {
+  font-weight: 600;
+  height: 45px;
+  margin-top: 30px;
+  margin-bottom: 10px;
+  color: #fff;
+  cursor: pointer;
+  display: block;
+  background-color: rgb(229, 9, 20);
+  border-radius: 3px;
+
+  font-size: 16px;
+  outline: none;
+  border: none;
+  width: 100%;
+}
+
+.login__facebook {
+  display: flex;
+  align-content: center;
+}
+.login__facebook:hover {
+  cursor: pointer;
+}
+
+.facebook__icon {
+  color: #3b5999;
+}
+
+.login__facebook p {
+  font-size: 13px;
+  color: rgb(146, 146, 146);
+  padding-left: 5px;
+  padding-top: 5px;
+}
+
+.login__container__bottom {
+  margin-top: 40px;
+}
+
+.login__container__bottom__signup {
+  margin-top: 10px;
+  font-size: 16px;
+  color: rgb(146, 146, 146);
+}
+.login__container__bottom__signup span {
+  font-size: 16px;
+  color: #fff;
+}
+
+.login__container__bottom__signup span:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.login__container__bottom__captcha {
+  margin-top: 10px;
+  font-size: 13px;
+  color: rgb(146, 146, 146);
+}

@@ -29,3 +29,12 @@
   width: 30px;
   object-fit: contain;
 }
+
+.nav__username {
+  text-decoration: none;
+  color: #fff;
+  font-size: 8px;
+  position: fixed;
+  right: 20px;
+  margin-top: 33px;
+}

@@ -1,7 +1,8 @@
 import React, { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 import "./Nav.css";
 
-function Nav() {
+function Nav({ user }) {
   const [show, handleShow] = useState(false);
 
   useEffect(() => {
@@ -11,7 +12,7 @@ function Nav() {
       } else handleShow(false);
     });
     return () => {
-      window.removeEventListener("scroll");
+      window.removeEventListener("scroll", window);
     };
   }, []);
 
@@ -22,12 +23,14 @@ function Nav() {
         src="https://upload.wikimedia.org/wikipedia/commons/0/0f/Logo_Netflix.png"
         alt="Netflix Logo"
       />
-
-      <img
-        className="nav__avatar"
-        src="https://learning.royalbcmuseum.bc.ca/wp-content/uploads/2014/07/netflix-face.jpg"
-        alt="Netflix avatar"
-      />
+      <Link to="/login">
+        <img
+          className="nav__avatar"
+          src="https://learning.royalbcmuseum.bc.ca/wp-content/uploads/2014/07/netflix-face.jpg"
+          alt="Netflix avatar"
+        />
+      </Link>
+      <p className="nav__username">{user ? user.email : ""}</p>
     </div>
   );
 }
