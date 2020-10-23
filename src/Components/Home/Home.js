@@ -12,8 +12,6 @@ function Home() {
 
   useEffect(() => {
     auth.onAuthStateChanged((authUser) => {
-      console.log("THE USER IS >>>>", authUser);
-
       if (authUser) {
         setUser(authUser);
       } else {

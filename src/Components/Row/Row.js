@@ -2,17 +2,12 @@ import React, { useState, useEffect } from "react";
 import YouTube from "react-youtube";
 import axios from "../../axios"; //called axios but in reality is importing the instance function
 import "./Row.css";
-import movieTrailer from "movie-trailer";
-
 const baseImg_url = "https://image.tmdb.org/t/p/original/";
 
 function Row({ title, fetchUrl, isLargeRow }) {
   const [movies, setMovies] = useState([]);
   const [trailerUrl, setTrailerUrl] = useState("");
 
-  //Code wich runs based on a specific condition
-  //if the brakets are blank, only run once on first load
-  //if we would pass for ex: fetchUrl, it would load everytime that fetchUrl would change
   useEffect(() => {
     async function fetchData() {
       const request = await axios.get(fetchUrl);
@@ -32,7 +27,6 @@ function Row({ title, fetchUrl, isLargeRow }) {
           return response.json();
         })
         .then((data) => {
-          // const results = data.results;
           setTrailerUrl(data.results[0].key);
         })
         .catch((err) => console.log(err));

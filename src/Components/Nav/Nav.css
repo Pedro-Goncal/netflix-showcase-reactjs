@@ -34,7 +34,11 @@
   text-decoration: none;
   color: #fff;
   font-size: 8px;
+  font-weight: 600;
   position: fixed;
   right: 20px;
   margin-top: 33px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
 }

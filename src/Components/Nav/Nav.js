@@ -1,5 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
+import { auth } from "../Firebase";
+
 import "./Nav.css";
 
 function Nav({ user }) {
@@ -16,6 +18,12 @@ function Nav({ user }) {
     };
   }, []);
 
+  const handleAuthentication = () => {
+    if (user) {
+      auth.signOut();
+    }
+  };
+
   return (
     <div className={`nav ${show && "nav__black"}`}>
       <img
@@ -25,12 +33,16 @@ function Nav({ user }) {
       />
       <Link to="/login">
         <img
+          onClick={handleAuthentication}
           className="nav__avatar"
           src="https://learning.royalbcmuseum.bc.ca/wp-content/uploads/2014/07/netflix-face.jpg"
           alt="Netflix avatar"
         />
       </Link>
-      <p className="nav__username">{user ? user.email : ""}</p>
+      <div className="nav__username">
+        <p>{user ? `Hello ${user.email}` : "Sign in"}</p>
+        <p>{user ? "Sign out" : null}</p>
+      </div>
     </div>
   );
 }
