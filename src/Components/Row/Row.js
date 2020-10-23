@@ -26,12 +26,16 @@ function Row({ title, fetchUrl, isLargeRow }) {
     if (trailerUrl) {
       setTrailerUrl("");
     } else {
-      movieTrailer(movie?.name || "")
-        .then((url) => {
-          const urlParams = new URLSearchParams(new URL(url).search);
-          setTrailerUrl(urlParams.get("v"));
+      const url = `https://api.themoviedb.org/3/movie/${movie.id}/videos?api_key=947b0f0af52c9b74afa43eed2267820d&language=en-US`;
+      fetch(url)
+        .then((response) => {
+          return response.json();
         })
-        .catch((error) => console.log(error));
+        .then((data) => {
+          // const results = data.results;
+          setTrailerUrl(data.results[0].key);
+        })
+        .catch((err) => console.log(err));
     }
   };
 
