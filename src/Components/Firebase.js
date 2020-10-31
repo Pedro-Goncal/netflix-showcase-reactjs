@@ -21,7 +21,10 @@ const db = firebaseApp.firestore();
 //Initialize the authentication
 const auth = firebase.auth();
 
-export { db, auth };
+// const provider = new firebase.auth.GoogleAuthProvider();
+const facebookAuth = new firebase.auth.FacebookAuthProvider();
+
+export { db, auth, facebookAuth };
 
 //Firebase website... project setting, scroll to the bottom, click config and copy it to firebase.js
 

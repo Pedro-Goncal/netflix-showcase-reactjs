@@ -5,12 +5,16 @@ import "./App.css";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
 import Login from "./Components/Login/Login";
+import SignUp from "./Components/SignUp/SignUp";
 
 function App() {
   return (
     <Router>
       <div className="app">
         <Switch>
+          <Route path="/signup">
+            <SignUp />
+          </Route>
           <Route path="/login">
             <Login />
           </Route>

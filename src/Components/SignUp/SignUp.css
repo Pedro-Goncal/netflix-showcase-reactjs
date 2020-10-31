@@ -1,0 +1,103 @@
+.signup {
+  background-image: url("https://assets.nflxext.com/ffe/siteui/vlv3/0f67308d-db59-4393-9502-8e475c69a0b5/689f43b3-97b8-488e-ab07-d851fe507747/MX-en-20200928-popsignuptwoweeks-perspective_alpha_website_large.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  box-shadow: inset 0 0 0 2000px rgba(0, 0, 0, 0.484);
+}
+
+.signup__banner {
+  height: 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.signup__banner button {
+  font-weight: 600;
+  padding: 7px 17px;
+  color: #fff;
+  cursor: pointer;
+  background-color: rgb(229, 9, 20);
+  border-radius: 3px;
+  font-size: 16px;
+  outline: none;
+  border: none;
+  width: 100%;
+}
+
+.nav__logoSignup {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  height: 40px;
+  padding-left: 56px;
+  object-fit: contain;
+}
+
+.signup__menu {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 75px;
+}
+
+.signup__inputes {
+  display: flex;
+  align-items: center;
+}
+
+.signup__backgroundImg {
+  position: absolute;
+  z-index: -1;
+  width: 100%;
+  height: auto;
+  top: 0;
+}
+
+.signup__container {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #fff;
+  font-size: 16px;
+  border-radius: 2px;
+}
+.signup__container h1 {
+  font-size: 80px;
+}
+
+.signup__container input {
+  background-color: rgb(51, 51, 51);
+  width: 100%;
+  margin-bottom: 10px;
+  padding: 20px;
+  height: 20px;
+  border-radius: 3px;
+  outline: none;
+  border: none;
+  font-size: 14px;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: rgb(146, 146, 146);
+}
+
+input:-webkit-autofill {
+  -webkit-box-shadow: 0 0 0 30x rgb(51, 51, 51) inset !important;
+}
+
+input:-webkit-autofill {
+  -webkit-text-fill-color: rgb(146, 146, 146) !important;
+}
+
+.signup__signinButton {
+  font-weight: 600;
+  height: 45px;
+  margin-top: 30px;
+  margin-bottom: 10px;
+  color: #fff;
+  cursor: pointer;
+  background-color: rgb(229, 9, 20);
+  border-radius: 3px;
+  font-size: 16px;
+  outline: none;
+  border: none;
+  width: 100%;
+}

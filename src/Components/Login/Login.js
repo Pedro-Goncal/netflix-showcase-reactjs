@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Link, useHistory } from "react-router-dom";
-import { auth } from "../Firebase";
+import { auth, facebookAuth } from "../Firebase";
 import FacebookIcon from "@material-ui/icons/Facebook";
 
 import "./Login.css";
@@ -35,6 +35,16 @@ function Login() {
         }
       })
       .catch((error) => alert(error.message));
+  };
+
+  const facebook = async (e) => {
+    e.preventDefault();
+    await auth
+      .signInWithPopup(facebookAuth)
+      .then((auth) => {
+        history.push("/");
+      })
+      .catch((error) => alert(error.credentrial));
   };
 
   return (
@@ -84,7 +94,7 @@ function Login() {
           <div className="login__container__bottom">
             <div className="login__facebook">
               <FacebookIcon className="facebook__icon" />
-              <p>Log in with Facebook</p>
+              <p onClick={facebook}>Log in with Facebook</p>
             </div>
             <div className="login__container__bottom__signup">
               <p>

@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import YouTube from "react-youtube";
 import axios from "../../axios"; //called axios but in reality is importing the instance function
 import "./Row.css";
+
 const baseImg_url = "https://image.tmdb.org/t/p/original/";
 
 function Row({ title, fetchUrl, isLargeRow }) {
