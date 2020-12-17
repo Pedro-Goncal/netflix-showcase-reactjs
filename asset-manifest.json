@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/netflix-showcase-reactjs/static/css/main.16c28f0e.chunk.css",
+    "main.js": "/netflix-showcase-reactjs/static/js/main.d6445d2c.chunk.js",
+    "main.js.map": "/netflix-showcase-reactjs/static/js/main.d6445d2c.chunk.js.map",
+    "runtime-main.js": "/netflix-showcase-reactjs/static/js/runtime-main.0787e7fa.js",
+    "runtime-main.js.map": "/netflix-showcase-reactjs/static/js/runtime-main.0787e7fa.js.map",
+    "static/js/2.f1dfbf4b.chunk.js": "/netflix-showcase-reactjs/static/js/2.f1dfbf4b.chunk.js",
+    "static/js/2.f1dfbf4b.chunk.js.map": "/netflix-showcase-reactjs/static/js/2.f1dfbf4b.chunk.js.map",
+    "index.html": "/netflix-showcase-reactjs/index.html",
+    "precache-manifest.06a056b5cc450e956e879c908adfd92c.js": "/netflix-showcase-reactjs/precache-manifest.06a056b5cc450e956e879c908adfd92c.js",
+    "service-worker.js": "/netflix-showcase-reactjs/service-worker.js",
+    "static/css/main.16c28f0e.chunk.css.map": "/netflix-showcase-reactjs/static/css/main.16c28f0e.chunk.css.map",
+    "static/js/2.f1dfbf4b.chunk.js.LICENSE.txt": "/netflix-showcase-reactjs/static/js/2.f1dfbf4b.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.0787e7fa.js",
+    "static/js/2.f1dfbf4b.chunk.js",
+    "static/css/main.16c28f0e.chunk.css",
+    "static/js/main.d6445d2c.chunk.js"
+  ]
+}
