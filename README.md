@@ -9,7 +9,5 @@
 * Log in page ( Click on the user logo top right corner)
 * User authentication with firebase and Facebook
 
-(ONLY OPTIMIZED ON CHROME - Working on the firefox issue with the css scroll property)
-
 
 #### For More info Please check out my [LinkedIn](https://www.linkedin.com/in/pedro-goncalves88)
