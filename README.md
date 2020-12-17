@@ -9,5 +9,7 @@
 * Log in page ( Click on the user logo top right corner)
 * User authentication with firebase and Facebook
 
+### Check it out [Live](https://pedro-goncal.github.io/netflix-showcase-reactjs/)
+
 
 #### For More info Please check out my [LinkedIn](https://www.linkedin.com/in/pedro-goncalves88)
